@@ -1,5 +1,4 @@
 
-#数据导入
 import numpy as np
 from sklearn import datasets
 iris=datasets.load_iris()
@@ -7,7 +6,6 @@ iris_X=iris.data
 iris_Y=iris.target
 np.unique(iris_Y)
 
-#KNN算法
 #Split iris data in train and test data
 #A random permutation ,to split the data randomly
 np.random.seed(0)
