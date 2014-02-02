@@ -11,17 +11,17 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import HashingVectorizer
 from sklearn.feature_selection import SelectKBest,chi2
-#Ridge 回归分类
+#Ridge Regression
 from sklearn.linear_model import RidgeClassifier
-#SVM 支持向量机
+#SVM Support Vector Machine
 from sklearn.svm import LinearSVC
 from sklearn.linear_model import SGDClassifier
-#感知机
+#Perceptron
 from sklearn.linear_model import Perceptron
-from sklearn.linear_mddel import PassiveAggressiveClassifier
-#朴素贝叶斯
+from sklearn.linear_model import PassiveAggressiveClassifier
+#Navie Bayes
 from sklearn.naive_bayes import BernoulliNB,MultinomialNB
-#最近邻分类器
+#KNN classifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neighbors import NearestCentroid
 from sklearn.utils.extmath import density
@@ -37,7 +37,7 @@ logging.basicConfig(level =logging.INFO,format='%(asctime)s %(levelname)s %(mess
 op=OptionParser()
 op.add_option("--report",action="store_true",dest="print_report",
               help="Print a detailed classification report.")
-op.add_option("--chi2_select",action="store_true",type="int",dest="select_chi2",
+op.add_option("--chi2_select",action="store",type="int",dest="select_chi2",
               help="Select some number of features using a chi-squared test")
 
 op.add_option("--confusion_matrix",action="store_true",dest="print_cm",
@@ -79,7 +79,7 @@ else:
      'sci.space',
   ]
 
-#去掉一些干扰性较大的部分，如头部，尾部和引用
+#delete some parts that influence the effects great.
 if opts.filtered:
   remove=('headers','footers','quotes')
 else:
@@ -88,11 +88,19 @@ else:
 print("Loading 20 newsgroup dataset for categories:")
 print(categories if categories else "all")
 
-#得到训练集
+#get the training set
+#fetch_20newsgroups fetching/caching functions that downloads the 
+#data archive from the original 20 newsgroups website extracts the 
+#archive contents in 20news_home folder and calls the load_file on
+#either the training or testing set folder or both of them
 data_train=fetch_20newsgroups(subset='train',categories=categories,shuffle=True,
   random_state=42,remove=remove)
 
-#得到测试集
+#get the test set
+#remove telling it what kinds of information to strip out of each
+# file,remove should be a tuple containing any subeset of
+#('headers','footers','quotes').telling it to remove headers ,signature
+#blocks and quotation blocks respectively
 data_test = fetch_20newsgroups(subset='test',categories=categories,shuffle=True,
   random_state=42,remove=remove)
 
@@ -105,8 +113,8 @@ def size_mb(docs):
   return sum(len(s.encode('utf-8')) for s in docs) / 1e6
 
 
-data_train_size_mb=size_mb(data_train.data)
-data_test_size_mb=size_mb(data_test.data)
+data_train_size_mb = size_mb(data_train.data)
+data_test_size_mb  = size_mb(data_test.data)
 
 print("%d documents - %0.3fMB(training set)" %(
   len(data_train.data),data_train_size_mb))
@@ -124,17 +132,20 @@ y_train,y_test=data_train.target,data_test.target
 print("Extracting features from the training dataset using a sparse vectorizer")
 t0=time()
 
+#Converting text to vectors
 if opts.use_hashing:
   vectorizer = HashingVectorizer(stop_words='english',non_negative=True,
               n_features=opts.n_features)
 
   X_train = vectorizer.transform(data_train.data)
 else:
-  vectorizer = TfidVectorizer(sublinear_tf=True,max_df=0.5,stop_words='english')
+  #extract TF_IDF vectors
+  vectorizer = TfidfVectorizer(sublinear_tf=True,max_df=0.5,stop_words='english')
+  #The extracted TF-IDF vectors are very sparse
   X_train = vectorizer.fit_transform(data_train.data)
 
+#vectorizer time
 duration = time()-t0
-
 print("Done in %fs at %0.3fMB/s" % (duration,data_train_size_mb/duration))
 print("n_samples:%d,nfeatures:%d" % X_train.shape)
 print()
@@ -144,11 +155,12 @@ print("Extracting features from the test dataset using the same vectorizer")
 t0=time()
 X_test = vectorizer.transform(data_test.data)
 duration = time()-t0
-print("Done in %fs at %0.3fMB/s" % (duration,data_test_size_mb/duration))
 
+print("Done in %fs at %0.3fMB/s" % (duration,data_test_size_mb/duration))
 print("n_samples: %d ,n_features:%d" % X_test.shape)
 print()
 
+#using the chi-squared test to choose the top n best features
 if opts.select_chi2:
   print("Extracting %d best features by a chi-squared test" % opts.select_chi2)
 
@@ -169,8 +181,7 @@ if opts.use_hashing:
 else:
   feature_names = np.asarray(vectorizer.get_feature_names())
 
-###########################################################
-############
+#######################################################################
 #Benchmark classifiers
 
 def benchmark(clf):
@@ -178,15 +189,18 @@ def benchmark(clf):
   print("Training: ")
   print(clf)
   t0 = time()
+  #training
   clf.fit(X_train,y_train)
   train_time = time()-t0
   print("train time: %0.3fs" % train_time)
 
   t0   = time()
+  #test
   pred = clf.predict(X_test)
   test_time = time() - t0
   print("test time: %0.3fs" % test_time)
 
+  #F1-Score measure
   score = metrics.f1_score(y_test,pred)
   print("f1-score: %0.3f" % score)
 
@@ -216,9 +230,9 @@ def benchmark(clf):
 
 results = []
 
+#the comparion of different algorithms
 for clf,name in ((RidgeClassifier(tol=1e-2,solver="lsqr"),"Ridge Classifier"),(Perceptron(n_iter=50),"Perceptron"),
-                 (PassiveAggressiveClassifier(n_iter=50),"Passive-Aggressive"),
-                 (KNeighborsClassifier(n_neighbors=10),"kNN"))
+                 (PassiveAggressiveClassifier(n_iter=50),"Passive-Aggressive"),(KNeighborsClassifier(n_neighbors=10),"kNN")):
   print('=' * 80)
   print(name)
   results.append(benchmark(clf))
@@ -248,9 +262,11 @@ results.append(benchmark(NearestCentroid()))
 #Train sparse Naive Bayes classifiers
 print('=' * 80)
 print("Naive Bayes")
-results.append(benchmark(MultinomialNB(alpha=.01)))
-results.append(benchmark(BernoulliNB(alpha=.01)))
+results.append(benchmark(MultinomialNB(alpha=.01))) #MultinomialNB
+results.append(benchmark(BernoulliNB(alpha=.01)))   #
 
+
+#L1LinearSVC don't 
 class L1LinearSVC(LinearSVC):
   def fit(self,X,y):
     #The smaller C , the stronger the regularization.
@@ -268,16 +284,19 @@ print("LinearSVC with L1-based feature selection")
 results.append(benchmark(L1LinearSVC()))
 
 #make some plots
-
 indices = np.arange(len(results))
 
+#separate
 results = [[x[i] for x in results] for i in range(4)]
 
 clf_names,score,training_time,test_time=results
+
+#normolize the training time
 training_time = np.array(training_time)/np.max(training_time)
+#normolize the test time
 test_time = np.array(test_time)/np.max(test_time)
 
-pl.figure(figsize=(12,8))
+pl.figure(figsize = (12,8))
 pl.title("Score")
 pl.barh(indices,score,.2,label="score",color='r')
 pl.barh(indices + .3,training_time,.2,label="training time",color='g')
