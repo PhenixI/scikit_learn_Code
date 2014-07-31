@@ -11,6 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/scikit_learn_Code$sku.coverage" NAME="sku Coverage Results" MODIFIED="1394093339873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Best-Complete" />
+    <SUITE FILE_PATH="coverage/scikit_learn_Code$text_classification.coverage" NAME="text_classification Coverage Results" MODIFIED="1403056100083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -23,31 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plot_species_distribution_modeling,py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plot_species_distribution_modeling,py">
+      <file leaf-file-name="text_classification.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="65" selection-start="915" selection-end="915" vertical-scroll-proportion="0.4974093" vertical-offset="263" max-vertical-offset="3211">
+            <state line="32" column="32" selection-start="1038" selection-end="1038" vertical-scroll-proportion="-2.3716216" vertical-offset="2619" max-vertical-offset="8910">
               <folding>
-                <element signature="e#146#183#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="species_distributions.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/species_distributions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0" vertical-offset="1840" max-vertical-offset="4940">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="9804">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,6 +60,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/plot_species_distribution_modeling,py" />
+        <option value="$PROJECT_DIR$/../Best-Complete/sku.py" />
       </list>
     </option>
   </component>
@@ -97,7 +84,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -117,36 +104,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scikit_learn_Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scikit_learn_Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scikit_learn_Code">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
-    <property name="last_opened_file_path" value="E:/python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../machine_learning/AdaBoost" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.text_classification">
+    <configuration default="false" name="text_classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="scikit_learn_Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text_classification.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,9 +249,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -255,6 +270,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -297,7 +315,36 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="sku" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Best-Complete" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Best-Complete" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Best-Complete/sku.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.text_classification" />
+      <item index="1" class="java.lang.String" itemvalue="Python.sku" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.text_classification" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -329,24 +376,24 @@
     <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.77692306" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22307692" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25972223" sideWeight="0.54102564" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40837696" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25972223" sideWeight="0.4576923" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41923076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2225131" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -358,28 +405,95 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="25" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
+    <entry file="file://$PROJECT_DIR$/text_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="9804">
-          <folding />
+        <state line="32" column="32" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="2700" max-vertical-offset="8910">
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/species_distributions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0" vertical-offset="1840" max-vertical-offset="4940">
-          <folding />
-        </state>
+        <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="4997" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="10089" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_species_distribution_modeling,py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="65" selection-start="915" selection-end="915" vertical-scroll-proportion="0.4974093" vertical-offset="263" max-vertical-offset="3211">
+        <state line="20" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3211" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/species_distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="4997" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="10089" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_species_distribution_modeling,py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="3211" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/species_distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="4997" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="10089" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_species_distribution_modeling,py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="65" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="3211" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/species_distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="4997" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="10089" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_species_distribution_modeling,py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="-0.25232404" vertical-offset="380" max-vertical-offset="3021" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="6" selection-start="578" selection-end="578" vertical-scroll-proportion="-0.37848607" vertical-offset="513" max-vertical-offset="9804" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/datasets/species_distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="63" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-0.07569721" vertical-offset="2299" max-vertical-offset="4940" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="32" selection-start="1038" selection-end="1038" vertical-scroll-proportion="-2.3716216" vertical-offset="2619" max-vertical-offset="8910">
           <folding>
-            <element signature="e#146#183#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

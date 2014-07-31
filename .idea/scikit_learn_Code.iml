@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="集体智慧编程" />
+    <orderEntry type="module" module-name="Best-Complete" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="myDocStringFormat" value="Plain" />

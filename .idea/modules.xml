@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Best-Complete/.idea/Best-Complete.iml" filepath="$PROJECT_DIR$/../Best-Complete/.idea/Best-Complete.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/scikit_learn_Code.iml" filepath="$PROJECT_DIR$/.idea/scikit_learn_Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../集体智慧编程/.idea/集体智慧编程.iml" filepath="$PROJECT_DIR$/../集体智慧编程/.idea/集体智慧编程.iml" />
     </modules>
   </component>
 </project>
