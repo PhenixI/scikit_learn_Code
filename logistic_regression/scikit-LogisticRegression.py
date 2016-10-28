@@ -1,5 +1,4 @@
-#Âß¼­»Ø¹é£¬¶şÔª·ÖÀà
-#Êı¾İµ¼Èë
+ï»¿#binary classification
 import numpy as np
 from sklearn import datasets
 iris=datasets.load_iris()
