@@ -1,4 +1,4 @@
-
+#more info about decision tree and source code visit: https://github.com/PhenixI/machine-learning/tree/master/16-Decision_Tree_Learning
 
 #comparsion of three different impurity criteria, Gini index, entropy and classification error
 import matplotlib.pyplot as plt
